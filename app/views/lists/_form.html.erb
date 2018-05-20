@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :description %>
-    <%= form.text_field :description, id: :list_description %>
+    <%= form.text_field :description, id: :list_description, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :completed %>
-    <%= form.check_box :completed, id: :list_completed %>
+  <div class="form-group form-check">
+    <%= form.check_box :completed, id: :list_completed, class: "form-check-input" %>
+    <%= form.label :completed, class: "form-check-label" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Update Todo Item", class: "btn btn-primary" %>
   </div>
 <% end %>
