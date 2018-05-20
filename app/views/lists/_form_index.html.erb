@@ -11,14 +11,9 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    Add New Lists Item: </br>
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :list_description, class: "form-control" %>
-  </div>
-
-  <div class= "actions form-group">
-    <%= form.submit "Add Todo Item", class: "btn btn-primary" %>
+  <div class="form-inline my-2 my-lg-0">
+    <%= form.text_field :description, id: :list_description, class: "form-control mr-sm-2" %>
+    <%= form.submit "Add Todo Item", class: "btn btn-outline-success my-2 my-sm-0" %>
   </div>
 
 <% end %>
