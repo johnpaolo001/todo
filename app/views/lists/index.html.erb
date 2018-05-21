@@ -30,4 +30,5 @@
 
 <% link_to 'Add Todo Item', new_list_path, class: "btn btn-success" %>
 </br>
-<%= link_to "Delete Market Items", home_trash_path,data: { confirm: 'Are you sure?' } %>
+<%= link_to "Delete Market Items", home_trash_path,class: "btn btn-secondary" ,data: { confirm: 'Are you sure?' } %>
+<%= link_to "Delete All Item", home_trash_all_path,class: "btn btn-danger" ,data: { confirm: 'Are you sure?' }  %>
